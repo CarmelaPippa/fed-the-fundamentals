@@ -1,0 +1,84 @@
+/* General */
+* {
+  font-family: "Space Mono", monospace;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url("img/stars.jpeg");
+  margin-top: 350px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.header-container {
+  padding: 32px 1em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-image: url("img/stars.jpeg");
+  width: 100%;
+}
+
+.image-header {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Nav */
+.header-menu {
+  list-style: none;
+  display: flex;
+  justify-content: safe center;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.header-menu-item {
+  margin: 0 0.5rem;
+  padding: 10px 12px;
+  border: #8a00ff solid 4px;
+  border-radius: 10px;
+  background-color: #2dd7ff;
+  font-weight: 900;
+}
+
+.header-menu-item:hover {
+  background-color: #ffd43a;
+  border: none;
+}
+
+.header-menu-item a {
+  color: #8a00ff;
+}
+
+.header-menu-item a:active {
+  color: #ff4b1e;
+}
+
+/* Grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 32px;
+  padding: 48px;
+}
+
+.section-grid-item img {
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-image: url(img/stars.jpeg);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+}
