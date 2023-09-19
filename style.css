@@ -8,7 +8,7 @@
 
 body {
   background-image: url("img/stars.jpeg");
-  margin-top: 350px;
+  margin-top: 250px;
 }
 
 a {
@@ -44,11 +44,20 @@ a {
 }
 
 /* Nav */
+.header-nav {
+  display: flex;
+}
+
 .header-menu {
   list-style: none;
   display: flex;
-  justify-content: safe center;
-  gap: 2rem;
+  /* justify-content: space-evenly; */
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+ul.header-menu {
+  padding: 0;
 }
 
 .header-menu-item {
