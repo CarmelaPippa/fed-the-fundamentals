@@ -17,16 +17,29 @@ a {
 
 /* Header */
 .header-container {
-  padding: 32px 1em;
+  display: flex;
+  padding: 2em 2em;
   text-align: center;
   position: fixed;
   top: 0;
   background-image: url("img/stars.jpeg");
   width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-header {
+  font-size: 1.5rem;
 }
 
 .image-header {
-  max-width: 400px;
+  max-width: 17em;
   margin: 0 auto;
 }
 
@@ -35,16 +48,15 @@ a {
   list-style: none;
   display: flex;
   justify-content: safe center;
-  overflow: scroll;
-  white-space: nowrap;
+  gap: 2rem;
 }
 
 .header-menu-item {
   margin: 0 0.5rem;
-  padding: 10px 12px;
-  border: #8a00ff solid 4px;
-  border-radius: 10px;
-  background-color: #2dd7ff;
+  padding: 10px 26px;
+  border: #8a00ff solid 2px;
+  /* border-radius: 10px; */
+  background-color: #0000006e;
   font-weight: 900;
 }
 
