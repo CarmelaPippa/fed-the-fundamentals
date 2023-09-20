@@ -71,7 +71,7 @@ ul.header-menu {
 
 .header-menu-item:hover {
   background-color: #ffd43a;
-  border: none;
+  border: #ffd43a solid 2px;
 }
 
 .header-menu-item a {
