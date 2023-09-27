@@ -1,0 +1,71 @@
+/* Global */
+body {
+  margin-top: 4rem;
+  background-image: url(/img/stars.jpeg);
+}
+
+/* Container */
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: sticky;
+}
+
+.header__text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header__image {
+  max-width: 27em;
+  margin: 2rem auto 1rem auto;
+}
+
+/* Menù */
+.site__nav {
+  margin: 2rem;
+}
+
+.site__nav__menu {
+  list-style: none;
+  gap: 3rem;
+}
+.site__nav__menu ul {
+  margin: 0;
+}
+.site__nav__menu-item {
+  font-size: 1.3rem;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  /* responsive-container */
+  .main__container {
+    padding: 2rem 2rem;
+  }
+
+  .header__text {
+    margin-top: 1rem;
+  }
+  .header__image {
+    max-width: 20em;
+  }
+
+  /* responsive-menu */
+  .site__nav {
+    margin: -1rem;
+  }
+  .site__nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .site__nav ul {
+    padding-left: 0;
+  }
+}
