@@ -23,6 +23,22 @@
           <img class="header__image" src="img/90.png" alt="90"
         /></a>
       </div>
+      <!-- Menu toggle -->
+      <div class="nav-container">
+        <input class="checkbox" type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="menu-items">
+          <li class="menu-item__li"><a href="#">Home</a></li>
+          <li class="menu-item__li"><a href="#">Cartoons</a></li>
+          <li class="menu-item__li"><a href="#">Music</a></li>
+          <li class="menu-item__li"><a href="#">Game</a></li>
+          <li class="menu-item__li"><a href="#">Movie</a></li>
+        </div>
+      </div>
       <!-- Nav -->
       <nav class="site__nav">
         <ul class="site__nav__menu">
@@ -30,12 +46,69 @@
           <li class="site__nav__menu-item"><a href="#">Cartoons</a></li>
           <li class="site__nav__menu-item"><a href="#">Music</a></li>
           <li class="site__nav__menu-item"><a href="#">Game</a></li>
-          <li class="site__nav__menu-item"><a href="#">Movie</a></li>
+          <li class="site__nav__menu-item"><a href="#">Napoli</a></li>
         </ul>
       </nav>
     </header>
     <!-- Layout -->
-    <div class="marquee border-yellow">
+    <details class="details">
+      <summary class="summary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 566 566"
+          class="summary__images-animations"
+        >
+          <circle fill="#003E81" cx="283" cy="283" r="283" />
+          <path
+            fill="#FFFFFF"
+            d="M74.694 283C74.698 167.955 167.955 74.698 283 74.694c115.044.004 208.302 93.261 208.305 208.306-.003 115.044-93.261 208.302-208.305 208.305C167.955 491.302 74.698 398.044 74.694 283z"
+          />
+          <path
+            fill="#199FD6"
+            d="M141.658 141.658C105.477 177.842 83.113 227.788 83.111 283c.002 55.211 22.366 105.156 58.547 141.342 36.185 36.18 86.13 58.544 141.342 58.546 55.211-.002 105.156-22.366 141.342-58.546 36.18-36.186 58.544-86.131 58.546-141.342-.002-55.211-22.366-105.156-58.546-141.342C388.156 105.477 338.211 83.113 283 83.111c-55.212.002-105.157 22.366-141.342 58.547z"
+          />
+          <path
+            class="N-napoli"
+            fill="#FFFFFF"
+            d="M165.896 386.941c20.515-2.394 30.088-4.787 30.088-27.353V197.522c-19.147-23.592-24.617-24.618-29.063-24.618v-8.548h72.143l118.644 145.996h.684V206.753c0-20.515-4.103-31.797-31.798-33.849v-8.548h73.511v8.548c-24.618 3.077-26.669 10.941-26.669 27.353v201.386h-9.574l-152.15-185.316h-.684v136.764c0 24.618 7.181 31.114 32.482 33.85v8.548h-77.614v-8.548z"
+          />
+        </svg>
+        <p class="summary-text">FORZA NAPOLI!!</p>
+        <div class="arrow-line">
+          <span class="line line-sx"></span>
+          <span class="line line-dx"></span>
+        </div>
+      </summary>
+      <div class="details__content">
+        <p>
+          Grew up in Naples, southern Italy, with a passion for my favorite
+          <a href="#">team.</a>
+        </p>
+      </div>
+    </details>
+    <section>
+      <div class="box border-purple">
+        <div class="box__title"><h2>That's me!</h2></div>
+        <div class="box__content">
+          <img class="box-image" src="img/00.home/me.jpg" />
+          <p class="box__content-text">
+            <span> >>> </span>
+            Hi, I'm Carmela, born in '91. I has always been an animal lover and
+            this is why I appreciate emotional expression and sensitivity, I
+            give priority to empathy, social harmony and cooperation. <br />
+            <br />Always ready to explore and experience something new. I am
+            pragmatic and down to earth, with a strong focus on what is
+            happening or is very likely to happen.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div></div>
+    </section>
+
+    <!-- Marquee -->
+    <!-- <div class="marquee border-yellow">
       <div class="marquee__content">
         <h2>
           <span> >>> </span>
@@ -55,57 +128,12 @@
         </h2>
       </div>
     </div>
+    -->
+
+    <!-- Icon for cards -->
+    <!-- <span class="material-symbols-outlined"> navigate_next </span> -->
     <!-- Cards -->
     <span class="material-symbols-outlined"> navigate_next </span>
-    <section class="section__cards">
-      <div class="cards border-purple">
-        <div class="cards--title">Who am I?</div>
-        <div class="cards__content">
-          <div class="cards__container-images">
-            <img src="/img/00.home/me.jpg" class="cards__content--image" />
-          </div>
-          <p class="card__content-text">
-            <span> >>> </span>
-            Hi, I'm Carmela, born in '91. Grew up in Naples, southern Italy,
-            with a passion for crochet and a great support for my favorite team.
-            <br /><br />
-            I has always been an animal lover and this is why I appreciate
-            emotional expression and sensitivity, I give priority to empathy,
-            social harmony and cooperation. <br />
-            <br />Always ready to explore and experience something new. I am
-            pragmatic and down to earth, with a strong focus on what is
-            happening or is very likely to happen.
-          </p>
-        </div>
-      </div>
-      <div class="cards border-green">
-        <div class="cards--title">My first windows -98</div>
-        <div class="cards__content">
-          <div class="cards__container-images">
-            <img src="/img/computer98.gif" class="cards__content--image" />
-            <img src="/img/computer98.jpg" class="cards__content--image" />
-          </div>
-
-          <p class="card__content-text">
-            <span> >>> </span>
-            My Windows '98 computer holds a special place in my memories, as it
-            marked the beginning of my digital journey and taught me valuable
-            problem-solving skills. Back in those days, owning a Windows '98
-            computer was an exciting experience for me.
-            <br />
-            Computers of that era weren't as stable as modern ones, and they
-            often encountered issues. I quickly discovered that calling a
-            technician could be costly, so I took matters into my own hands.
-            Watching those technicians work became a valuable learning
-            experience for me. I observed their every move, trying to grasp the
-            intricacies of the machine. Over time, I became more confident and
-            adept at solving issues myself. This newfound skill not only saved
-            me money but also empowered me to navigate the digital world with
-            greater ease.
-          </p>
-        </div>
-      </div>
-    </section>
     <!-- mettere i loghi degli anni 90 con animazione -->
     <footer><h4>Made by Carmela Pippa</h4></footer>
   </body>
