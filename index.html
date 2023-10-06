@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +22,7 @@
     <header class="header__container">
       <div class="header__logo">
         <a href="home/home.html">
-          <img class="header__image" src="img/90.png" alt="90"
+          <img class="header__image" src="img/global/90.png" alt="90"
         /></a>
       </div>
       <!-- Menu toggle -->
@@ -51,6 +53,24 @@
       </nav>
     </header>
     <!-- Layout -->
+    <section>
+      <div class="box border-blue">
+        <div class="box__title"><h2>That's me!</h2></div>
+        <div class="box__content">
+          <img class="box-image" src="img/pages/index/me.jpg" alt="mini me" />
+          <p class="box__content-text">
+            <span> >>> </span>
+            Hi, I'm Carmela, born in '91. I has always been an animal lover and
+            this is why I appreciate emotional expression and sensitivity, I
+            give priority to empathy, social harmony and cooperation. <br />
+            <br />Always ready to explore and experience something new. I am
+            pragmatic and down to earth, with a strong focus on what is
+            happening or is very likely to happen.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- details -->
     <details class="details">
       <summary class="summary">
         <svg
@@ -82,33 +102,99 @@
       <div class="details__content">
         <p>
           Grew up in Naples, southern Italy, with a passion for my favorite
-          <a href="#">team.</a>
+          <a class="details__a-text" href="https://sscnapoli.it/">team.</a>
         </p>
       </div>
     </details>
-    <section>
-      <div class="box border-purple">
-        <div class="box__title"><h2>That's me!</h2></div>
-        <div class="box__content">
-          <img class="box-image" src="img/00.home/me.jpg" />
-          <p class="box__content-text">
-            <span> >>> </span>
-            Hi, I'm Carmela, born in '91. I has always been an animal lover and
-            this is why I appreciate emotional expression and sensitivity, I
-            give priority to empathy, social harmony and cooperation. <br />
-            <br />Always ready to explore and experience something new. I am
-            pragmatic and down to earth, with a strong focus on what is
-            happening or is very likely to happen.
-          </p>
+    <!-- end details -->
+    <section class="section__cards">
+      <div class="cards">
+        <div class="card__content">
+          <img
+            src="img/pages/index/cards/Napoli.png"
+            alt="Napoli"
+            class="cover-image"
+          />
         </div>
+        <img
+          src="img/pages/index/cards/SSC_Napoli_(wordmark).png"
+          alt="Napoli wordmark"
+          class="title"
+        />
+        <img
+          src="img/pages/index/cards/maradona.png"
+          class="character"
+          alt="maradona"
+        />
       </div>
-    </section>
-    <section class="cards">
-      <div></div>
+      <div class="cards">
+        <div class="card__content">
+          <img
+            src="img/pages/index/cards/windows.png"
+            alt="windows"
+            class="cover-image"
+          />
+        </div>
+        <img
+          src="img/pages/index/cards/windows logo.png"
+          alt="windows logo"
+          class="title"
+        />
+        <img
+          src="img/pages/index/cards/computer.png"
+          alt="computer"
+          class="character"
+        />
+      </div>
+      <div class="cards">
+        <div class="card__content">
+          <img
+            src="img/pages/index/cards/cover-lettore.png"
+            alt="cd player"
+            class="cover-image"
+          />
+        </div>
+        <img src="" alt="" class="title" />
+        <img
+          src="img/pages/index/cards/lettore-cd.png"
+          alt="cd player"
+          class="character"
+        />
+      </div>
+      <div class="cards">
+        <div class="card__content">
+          <img
+            src="img/pages/index/cards/cartoon.png"
+            alt="toons"
+            class="cover-image"
+          />
+        </div>
+        <img src="img/pages/index/cards/mulan brand.png" alt="" class="title" />
+        <img
+          src="img/pages/index/cards/mulan.png"
+          alt="Mulan"
+          class="character"
+        />
+      </div>
+      <div class="cards">
+        <div class="card__content">
+          <img
+            src="img/pages/index/cards/game.png"
+            alt="Arcade"
+            class="cover-image"
+          />
+        </div>
+        <img src="" alt="" class="title" />
+        <img
+          src="img/pages/index/cards/arcade.png"
+          alt="Mulan"
+          class="character"
+        />
+      </div>
     </section>
 
     <!-- Marquee -->
-    <!-- <div class="marquee border-yellow">
+    <div class="marquee border-yellow">
       <div class="marquee__content">
         <h2>
           <span> >>> </span>
@@ -128,7 +214,6 @@
         </h2>
       </div>
     </div>
-    -->
 
     <!-- Icon for cards -->
     <!-- <span class="material-symbols-outlined"> navigate_next </span> -->

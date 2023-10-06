@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+
+:root {
+  --color-yellow: #ffd43a;
+  --color-green: #00bd64;
+  --color-red: #ff4b1e;
+  --color-purple: #8a00ff;
+  --color-blue: #69d4fa;
+  --color-pink: #f091ea;
+  --color-bg: #1d1d1d;
+}
+
+/* Global */
+body {
+  background-image: url(/img/global/stars.jpeg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  font-size: 38px !important;
+  font-weight: 900 !important;
+}
+
+/* Color*/
+/* Color purple */
+.border-purple {
+  border: var(--color-purple) 4px solid;
+}
+.border-purple .box__title {
+  background-color: var(--color-purple);
+  padding-left: 1rem;
+}
+.border-purple span {
+  color: var(--color-purple);
+}
+
+/* Color yellow */
+.border-yellow {
+  border: var(--color-yellow) 4px solid;
+}
+.border-yellow .box__title {
+  background-color: var(--color-yellow);
+  padding-left: 1rem;
+}
+.border-yellow span {
+  color: var(--color-yellow);
+}
+
+/* Color blue */
+.border-blue {
+  border: var(--color-blue) 4px solid;
+}
+.border-blue .box__title {
+  background-color: var(--color-blue);
+  padding-left: 1rem;
+}
+.border-blue span {
+  color: var(--color-blue);
+}
+
+/* Footer */
+footer {
+  background-image: url(/img/global/stars.jpeg);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 12px;
+}
+/* Responsive */
+@media (min-width: 875px) {
+  /* responsive- global */
+  body {
+    margin: 0;
+  }
+  .material-symbols-outlined {
+    display: none !important;
+  }
+}
