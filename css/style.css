@@ -374,8 +374,13 @@
   .summary {
     padding: 1rem;
   }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
   .summary__images-animations {
-    max-width: 3rem;
+    width: 3rem;
+    height: 3rem;
   }
   .summary-text {
     font-size: 1.5rem;

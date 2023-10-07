@@ -19,6 +19,7 @@
 /* Global */
 body {
   background-image: url(/img/global/stars.jpeg);
+  overflow-x: hidden;
 }
 
 a {
