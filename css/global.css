@@ -20,6 +20,7 @@
 body {
   background-image: url(/img/global/stars.jpeg);
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -46,6 +47,9 @@ a {
 .border-purple span {
   color: var(--color-purple);
 }
+.bg-purple {
+  background-color: var(--color-purple);
+}
 
 /* Color yellow */
 .border-yellow {
@@ -71,6 +75,21 @@ a {
   color: var(--color-blue);
 }
 
+/* Color green */
+.border-green {
+  border: var(--color-green) 4px solid;
+}
+.border-green .box__title {
+  background-color: var(--color-green);
+  padding-left: 1rem;
+}
+.border-green span {
+  color: var(--color-green);
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+
 /* Footer */
 footer {
   background-image: url(/img/global/stars.jpeg);
@@ -79,14 +98,12 @@ footer {
   bottom: 0;
   width: 100vw;
   padding: 12px;
+  z-index: 3;
 }
 /* Responsive */
 @media (min-width: 875px) {
   /* responsive- global */
   body {
     margin: 0;
-  }
-  .material-symbols-outlined {
-    display: none !important;
   }
 }
