@@ -26,7 +26,7 @@
         /></a>
       </div>
       <!-- Menu toggle -->
-      <div class="nav-container">
+      <nav class="nav-container">
         <input class="checkbox" type="checkbox" />
         <div class="hamburger-lines">
           <span class="line line1"></span>
@@ -35,20 +35,20 @@
         </div>
         <div class="menu-items">
           <li class="menu-item__li"><a href="#">Home</a></li>
-          <li class="menu-item__li"><a href="#">Memories</a></li>
-          <li class="menu-item__li"><a href="#">Gallery</a></li>
-          <li class="menu-item__li"><a href="#">Game</a></li>
-          <li class="menu-item__li"><a href="#">Movie</a></li>
+          <li class="menu-item__li"><a href="#cartoons">Cartoons</a></li>
+          <li class="menu-item__li"><a href="#music">Music</a></li>
+          <li class="menu-item__li"><a href="#game">Games</a></li>
+          <li class="menu-item__li"><a href="#movie">Movies</a></li>
         </div>
-      </div>
+      </nav>
       <!-- Nav -->
       <nav class="site__nav">
         <ul class="site__nav__menu">
           <li class="site__nav__menu-item"><a href="#">Home</a></li>
-          <li class="site__nav__menu-item"><a href="#">Cartoons</a></li>
-          <li class="site__nav__menu-item"><a href="#">Music</a></li>
-          <li class="site__nav__menu-item"><a href="#">Game</a></li>
-          <li class="site__nav__menu-item"><a href="#">Napoli</a></li>
+          <li class="site__nav__menu-item"><a href="#cartoons">Cartoons</a></li>
+          <li class="site__nav__menu-item"><a href="#music">Music</a></li>
+          <li class="site__nav__menu-item"><a href="#game">Games</a></li>
+          <li class="site__nav__menu-item"><a href="#movie">Movies</a></li>
         </ul>
       </nav>
     </header>
@@ -59,7 +59,7 @@
         <div class="box__content">
           <img class="box-image" src="img/pages/index/me.jpg" alt="mini me" />
           <p class="box__content-text">
-            <span> >>> </span>
+            <span> >>></span>
             Hi, I'm Carmela, born in '91. I has always been an animal lover and
             this is why I appreciate emotional expression and sensitivity, I
             give priority to empathy, social harmony and cooperation. <br />
@@ -112,7 +112,7 @@
       <div class="marquee__content">
         <h2>
           <span> >>> </span>
-          MEMORIES FROM '90s
+          SOME MEMORIES FROM MY '90s
         </h2>
       </div>
       <div class="marquee__content">
@@ -124,7 +124,7 @@
       <div class="marquee__content">
         <h2>
           <span> >>> </span>
-          MEMORIES FROM '90s
+          SOME MEMORIES FROM MY '90s
         </h2>
       </div>
     </div>
@@ -241,20 +241,43 @@
         />
       </div>
     </section>
+    <!-- Nice title -->
+    <div class="animation__title">
+      <h2 class="animate-charcter">GENERIC '90S</h2>
+    </div>
     <!-- Section -->
     <section class="parallax">
-      <div class="parallax__images bg-green">
-        <div class="parallax__content square-left">
-          <h2>Music</h2>
-          <p>Questa è una prova</p>
-          <button></button>
+      <div class="parallax__images bg-cartoons border-purple" id="cartoons">
+        <div class="box__title"></div>
+        <div class="parallax__content square-left bg-purple">
+          <h2>Cartoons</h2>
+          <p>
+            The 90s brought us iconic cartoons setting new standards in humor
+            and storytelling.
+          </p>
+          <button class="parallax__button">See more</button>
         </div>
       </div>
-      <div class="parallax__images bg-purple">
-        <div class="parallax__content square-right">
+      <div class="parallax__images bg-music border-green" id="music">
+        <div class="box__title"></div>
+        <div class="parallax__content square-right bg-green">
           <h2>Music</h2>
-          <p>Questa è una prova</p>
-          <button></button>
+          <p>
+            The 90s redefined music, shaping unforgettable melodies and cultural
+            shifts.
+          </p>
+          <button class="parallax__button">See more</button>
+        </div>
+      </div>
+      <div class="parallax__images bg-game border-blue" id="game">
+        <div class="box__title"></div>
+        <div class="parallax__content square-left bg-blue">
+          <h2>Games</h2>
+          <p>
+            The 90s brought us iconic cartoons setting new standards in humor
+            and storytelling.
+          </p>
+          <button class="parallax__button">See more</button>
         </div>
       </div>
     </section>

@@ -331,6 +331,21 @@
   /*animation-timeline: scroll();*/
 }
 
+/* Animation title*/
+.animation__title {
+  text-align: center;
+}
+.animate-charcter {
+  color: linear-gradient(
+    89deg,
+    #8a00ff -0.76%,
+    #ff8bef 11%,
+    #f8d65a 29.05%,
+    #51fe00 36.43%,
+    #2dd7ff 51.74%
+  );
+}
+
 /* Responsive */
 @media (min-width: 875px) {
   /* responsive- header */
@@ -366,6 +381,7 @@
     background-color: var(--color-yellow);
     border: var(--color-yellow) solid 3px;
   }
+
   .site__nav__menu-item a {
     color: var(--color-purple);
   }
@@ -415,11 +431,6 @@
     font-size: 1.3rem;
   }
 
-  /* cards */
-  .section__cards::-webkit-scrollbar {
-    display: none;
-  }
-
   /* box */
   .box__content {
     display: flex;
@@ -434,66 +445,71 @@
 
   /*Parallax*/
   .parallax__images {
-    height: 70vh;
+    height: 60vh;
     position: relative;
+    margin: 1.5rem 0;
+  }
+  .bg-cartoons {
+    background-image: url(/img/pages/index/cartoons.jpeg);
+    background-size: cover;
+  }
+  .bg-music {
+    background-image: url(/img/pages/index/music.avif);
+    background-size: cover;
+  }
+  .bg-game {
+    background-image: url(/img/pages/index/games.jpeg);
+    background-size: cover;
   }
 
-  .parallax__content {
+  .parallax__button {
+    margin-top: 1rem;
     background-color: var(--color-bg);
-    box-shadow: 5px 5px 0px 0px var(--color-purple);
+  }
+  .parallax__content {
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.564);
     padding: 2rem;
     width: 300px;
     height: 250px;
     z-index: 1;
     position: absolute;
+    top: 0;
+  }
+  .parallax__content h2 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
   }
   .square-left {
-    animation: squareLeft auto linear;
-    animation-delay: 2s;
-    animation-timeline: scroll();
+    left: 3rem;
+
+    animation: squareLeft auto linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
   }
   .square-right {
-    right: 0;
-    top: -14rem;
-    animation: squareRight auto linear;
-    animation-timeline: scroll();
+    right: 3rem;
+    animation: squareRight auto linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
   }
 
   @keyframes squareLeft {
     0% {
       translate: 0 0;
-      opacity: 0;
-    }
-
-    39% {
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
     }
 
     100% {
-      translate: 0 100%;
-      opacity: 1;
+      translate: 0 200px;
     }
   }
 
   @keyframes squareRight {
     0% {
-      translate: 0 -100%;
-      opacity: 0;
-    }
-
-    39% {
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
+      translate: 0 0;
     }
 
     100% {
-      translate: 0 100%;
-      opacity: 1;
+      translate: 0 200px;
     }
   }
   /* end responsive */

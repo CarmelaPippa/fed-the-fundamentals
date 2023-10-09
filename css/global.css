@@ -19,20 +19,11 @@
 /* Global */
 body {
   background-image: url(/img/global/stars.jpeg);
-  overflow-x: hidden;
   overflow-y: auto;
 }
 
 a {
   text-decoration: none;
-}
-
-.material-symbols-outlined {
-  position: absolute;
-  top: 500px;
-  right: 0;
-  font-size: 38px !important;
-  font-weight: 900 !important;
 }
 
 /* Color*/
@@ -62,6 +53,9 @@ a {
 .border-yellow span {
   color: var(--color-yellow);
 }
+.bg-green {
+  color: var(--color-green);
+}
 
 /* Color blue */
 .border-blue {
@@ -72,7 +66,10 @@ a {
   padding-left: 1rem;
 }
 .border-blue span {
-  color: var(--color-blue);
+  background-color: var(--color-blue);
+}
+.bg-blue {
+  background-color: var(--color-blue);
 }
 
 /* Color green */
