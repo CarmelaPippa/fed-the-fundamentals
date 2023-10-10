@@ -87,6 +87,21 @@ a {
   background-color: var(--color-green);
 }
 
+/* Color green */
+.border-pink {
+  border: var(--color-pink) 4px solid;
+}
+.border-pink .box__title {
+  background-color: var(--color-pink);
+  padding-left: 1rem;
+}
+.border-pink span {
+  color: var(--color-pink);
+}
+.bg-pink {
+  background-color: var(--color-pink);
+}
+
 /* Footer */
 footer {
   background-image: url(/img/global/stars.jpeg);

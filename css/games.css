@@ -2,16 +2,19 @@
   overflow: hidden;
 }
 @media (min-width: 875px) {
-  .box__content {
+  .section__box {
     display: flex;
   }
-
+  .box {
+    max-height: fit-content;
+  }
+  .box__content {
+    width: 100vw;
+  }
   .box__content-text {
-    margin: 1rem;
-    width: 60vw;
+    max-width: 40vw;
   }
   .video-link {
-    width: -webkit-fill-available;
     margin: 1rem;
   }
 }
