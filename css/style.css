@@ -120,7 +120,6 @@
 /* Layout */
 
 /* details */
-
 .details {
   background-color: rgb(0, 62, 129);
   padding: 1rem;
@@ -236,7 +235,6 @@
   margin: 0 1rem;
 }
 
-/* Cards */
 .cover-image {
   width: 100%;
   height: 100%;
@@ -328,22 +326,75 @@
   width: 100%;
   flex-shrink: 0;
   animation: marquee 10s linear infinite;
-  /*animation-timeline: scroll();*/
 }
 
 /* Animation title*/
 .animation__title {
   text-align: center;
+  padding: 1rem;
+  background-color: var(--color-bg);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5rem;
 }
-.animate-charcter {
-  color: linear-gradient(
-    89deg,
-    #8a00ff -0.76%,
-    #ff8bef 11%,
-    #f8d65a 29.05%,
-    #51fe00 36.43%,
-    #2dd7ff 51.74%
-  );
+.animation__title h2 {
+  color: transparent;
+  animation: gradientTitle 1s ease-in infinite;
+}
+
+@keyframes gradientTitle {
+  0% {
+    color: var(--color-green);
+  }
+  25% {
+    color: var(--color-blue);
+  }
+  50% {
+    color: var(--color-purple);
+  }
+  75% {
+    color: var(--color-red);
+  }
+  100% {
+    color: var(--color-yellow);
+  }
+}
+
+/*Parallax*/
+.parallax__images {
+  height: 70vh;
+  position: relative;
+  margin: 1.5rem 0;
+}
+.bg-cartoons {
+  background-image: url(/img/pages/index/cartoons.jpeg);
+  background-size: cover;
+}
+.bg-music {
+  background-image: url(/img/pages/index/music.avif);
+  background-size: cover;
+}
+.bg-game {
+  background-image: url(/img/pages/index/games.jpeg);
+  background-size: cover;
+}
+
+.parallax__content {
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.564);
+  padding: 2rem;
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.parallax__content h2 {
+  color: var(--color-bg);
+  margin-bottom: 1rem;
+}
+
+.parallax__button {
+  margin-top: 1rem;
+  background-color: var(--color-bg);
 }
 
 /* Responsive */
@@ -443,45 +494,22 @@
     margin: 2rem;
   }
 
+  /* Animation Title */
+  .animation__title {
+    letter-spacing: 1.5rem;
+  }
+
   /*Parallax*/
   .parallax__images {
     height: 60vh;
-    position: relative;
-    margin: 1.5rem 0;
-  }
-  .bg-cartoons {
-    background-image: url(/img/pages/index/cartoons.jpeg);
-    background-size: cover;
-  }
-  .bg-music {
-    background-image: url(/img/pages/index/music.avif);
-    background-size: cover;
-  }
-  .bg-game {
-    background-image: url(/img/pages/index/games.jpeg);
-    background-size: cover;
-  }
-
-  .parallax__button {
-    margin-top: 1rem;
-    background-color: var(--color-bg);
   }
   .parallax__content {
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.564);
-    padding: 2rem;
     width: 300px;
     height: 250px;
-    z-index: 1;
-    position: absolute;
     top: 0;
-  }
-  .parallax__content h2 {
-    color: var(--color-bg);
-    margin-bottom: 1rem;
   }
   .square-left {
     left: 3rem;
-
     animation: squareLeft auto linear forwards;
     animation-timeline: view();
     animation-range: entry 0% exit 100%;

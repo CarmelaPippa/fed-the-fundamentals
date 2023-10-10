@@ -66,7 +66,7 @@ a {
   padding-left: 1rem;
 }
 .border-blue span {
-  background-color: var(--color-blue);
+  color: var(--color-blue);
 }
 .bg-blue {
   background-color: var(--color-blue);
