@@ -402,7 +402,7 @@
   /* responsive- header */
   .header__container {
     justify-content: space-between;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
   .header__image {
     max-width: 10em;
