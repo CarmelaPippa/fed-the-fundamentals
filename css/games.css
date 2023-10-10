@@ -1,0 +1,17 @@
+.box {
+  overflow: hidden;
+}
+@media (min-width: 875px) {
+  .box__content {
+    display: flex;
+  }
+
+  .box__content-text {
+    margin: 1rem;
+    width: 60vw;
+  }
+  .video-link {
+    width: -webkit-fill-available;
+    margin: 1rem;
+  }
+}
