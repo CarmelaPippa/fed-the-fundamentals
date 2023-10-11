@@ -114,6 +114,7 @@
 }
 .menu-item__li a {
   color: var(--color-bg);
+  display: block;
 }
 
 .site__nav {
@@ -428,7 +429,7 @@
   }
   .site__nav__menu-item {
     margin: 0 0.5rem;
-    padding: 10px 26px;
+
     border: var(--color-purple) solid 3px;
     background-color: #0000006e;
     font-weight: 900;
@@ -440,6 +441,8 @@
 
   .site__nav__menu-item a {
     color: var(--color-purple);
+    display: block;
+    padding: 10px 26px;
   }
   .site__nav__menu-item a:active {
     color: var(--color-red);

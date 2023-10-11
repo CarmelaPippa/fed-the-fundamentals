@@ -21,6 +21,9 @@ body {
   background-image: url(/img/global/stars.jpeg);
   overflow-y: auto;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 a {
   text-decoration: none;
