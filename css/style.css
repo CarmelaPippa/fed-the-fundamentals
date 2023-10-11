@@ -96,7 +96,7 @@
   list-style: none;
   text-align: center;
   transform: translate(-150%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in-out;
 }
 .menu-item__li {
   border-bottom: 4px solid #fff;
