@@ -96,7 +96,7 @@
   list-style: none;
   text-align: center;
   transform: translate(-150%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in;
 }
 .menu-item__li {
   border-bottom: 4px solid #fff;
@@ -182,6 +182,7 @@
   transform: rotate(-45deg);
   transition: translate 0.2s ease-in-out;
 }
+
 .details[open] .line-sx {
   translate: 10px;
 }
