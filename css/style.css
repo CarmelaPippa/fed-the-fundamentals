@@ -226,6 +226,7 @@
   scroll-behavior: smooth;
   margin: 2rem 0rem;
 }
+
 .cards {
   flex-shrink: 0;
   height: 300px;
